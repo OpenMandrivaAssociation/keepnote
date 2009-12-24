@@ -8,6 +8,8 @@ Source:         keepnote-%{version}.tar.gz
 URL:            http://rasm.ods.org/keepnote/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
+BuildRequires: python-devel
+
 %description
 KeepNote is an pplication that lets organize your notes.
 Keepnote replaces knowit (wich is incompatible with kde4).
