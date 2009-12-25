@@ -9,7 +9,6 @@ URL:            http://rasm.ods.org/keepnote/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: python-devel
-BuildRequires: libpython-devel
 
 %description
 KeepNote is an pplication that lets organize your notes.
