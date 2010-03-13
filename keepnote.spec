@@ -33,7 +33,7 @@ python setup.py install --prefix=%{buildroot}%_prefix --install-lib=%{buildroot}
 %defattr(-,root,root)
 %_bindir/%name
 %{py_platsitedir}
-%{_prefix}/share/applications
-%{_prefix}/share/icons/hicolor/48x48/apps/keepnote.png
+%{_datadir}/applications/keepnote.desktop
+%{_datadir}/icons/hicolor/48x48/apps/keepnote.png
 
 
