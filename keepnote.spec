@@ -11,8 +11,8 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 
 %description
-KeepNote is an pplication that lets organize your notes.
-Keepnote replaces knowit (wich is incompatible with kde4).
+KeepNote is an application that lets organize your notes.
+Keepnote replaces knowit (which is incompatible with kde4).
 
 %prep
 %setup -q
