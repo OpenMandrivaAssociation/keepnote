@@ -1,5 +1,5 @@
 Name:           keepnote
-Version:        0.6.2
+Version:        0.6.4
 Release:        %mkrel 1
 Group:          Development/Other
 License:        GPLv2
