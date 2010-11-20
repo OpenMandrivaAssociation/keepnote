@@ -1,10 +1,10 @@
 Name:           keepnote
-Version:        0.6.5
+Version:        0.6.6
 Release:        %mkrel 3
 Group:          Development/Other
 License:        GPLv2
 Summary:        KeepNote lets you keep notes
-Source:         keepnote-%{version}.tar.gz
+Source:         http://rasm.ods.org/keepnote/download/keepnote-%{version}.tar.gz
 URL:            http://rasm.ods.org/keepnote/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
