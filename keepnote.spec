@@ -1,6 +1,6 @@
 Name:           keepnote
 Version:        0.6.5
-Release:        %mkrel 2
+Release:        %mkrel 3
 Group:          Development/Other
 License:        GPLv2
 Summary:        KeepNote lets you keep notes
