@@ -1,5 +1,5 @@
 Name:           keepnote
-Version:        0.6.6
+Version:        0.6.7
 Release:        %mkrel 1
 Group:          Development/Other
 License:        GPLv2
@@ -16,6 +16,9 @@ Keepnote replaces knowit (which is incompatible with kde4).
 
 %prep
 %setup -q
+
+#fix desktop file, add ; to end of Categories list
+sed -i -e 's|\(Categories.*\)|\1;|' desktop/keepnote.desktop
 
 %build
 
