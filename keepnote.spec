@@ -1,12 +1,11 @@
 Name:           keepnote
-Version:        0.6.7
+Version:        0.7
 Release:        %mkrel 1
 Group:          Development/Other
 License:        GPLv2
 Summary:        KeepNote lets you keep notes
 Source:         http://rasm.ods.org/keepnote/download/keepnote-%{version}.tar.gz
 URL:            http://rasm.ods.org/keepnote/
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 BuildRequires:	python-devel
 
@@ -23,18 +22,18 @@ sed -i -e 's|\(Categories.*\)|\1;|' desktop/keepnote.desktop
 %build
 
 %install
-%__rm -rf %{buildroot}
+rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
 
 %find_lang %{name}
 
 %clean
-%__rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
-%_bindir/%name
+%{_bindir}/%{name}
 %{python_sitelib}/%{name}
 %{python_sitelib}/%{name}-%{version}-py%{py_ver}.egg-info
-%{_datadir}/applications/keepnote.desktop
-%{_datadir}/icons/hicolor/48x48/apps/keepnote.png
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
