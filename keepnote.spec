@@ -1,11 +1,11 @@
-Name:           keepnote
-Version:        0.7.3
-Release:        %mkrel 1
-Group:          Development/Other
-License:        GPLv2
-Summary:        KeepNote lets you keep notes
-Source:         http://rasm.ods.org/keepnote/download/keepnote-%{version}.tar.gz
-URL:            http://rasm.ods.org/keepnote/
+Name:		keepnote
+Version:	0.7.7
+Release:	%mkrel 1
+Group:		Development/Other
+License:	GPLv2
+Summary:	KeepNote lets you keep notes
+Source:		http://rasm.ods.org/keepnote/download/keepnote-%{version}.tar.gz
+URL:		http://rasm.ods.org/keepnote/
 BuildArch:	noarch
 BuildRequires:	python-devel
 
@@ -17,18 +17,18 @@ Keepnote replaces knowit (which is incompatible with kde4).
 %setup -q
 
 #fix desktop file, add ; to end of Categories list
-sed -i -e 's|\(Categories.*\)|\1;|' desktop/keepnote.desktop
+%__sed -i -e 's|\(Categories.*\)|\1;|' desktop/keepnote.desktop
 
 %build
 
 %install
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
 
 %find_lang %{name}
 
 %clean
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
