@@ -25,16 +25,15 @@ Keepnote replaces knowit (which is incompatible with kde4).
 %__rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
 
-%find_lang %{name}
+#find_lang causes problems here
 
 %clean
 %__rm -rf %{buildroot}
 
-%files -f %{name}.lang
+%files
 %defattr(-,root,root)
 %{_bindir}/%{name}
 %{python_sitelib}/%{name}
 %{python_sitelib}/%{name}-%{version}-py%{py_ver}.egg-info
-%exclude %{python_sitelib}/%{name}/rc/locale
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/48x48/apps/%{name}.png
