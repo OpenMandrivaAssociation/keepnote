@@ -35,5 +35,6 @@ python setup.py install --root=%{buildroot}
 %{_bindir}/%{name}
 %{python_sitelib}/%{name}
 %{python_sitelib}/%{name}-%{version}-py%{py_ver}.egg-info
+%exclude %{python_sitelib}/%{name}/rc/locale
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/48x48/apps/%{name}.png
