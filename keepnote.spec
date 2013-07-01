@@ -3,7 +3,7 @@ Version:	0.7.7
 Release:	%mkrel 1
 Group:		Development/Other
 License:	GPLv2
-Summary:	KeepNote lets you keep notes
+Summary:	Lets you keep notes
 Source:		http://rasm.ods.org/keepnote/download/keepnote-%{version}.tar.gz
 URL:		http://rasm.ods.org/keepnote/
 BuildArch:	noarch
