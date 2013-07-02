@@ -1,6 +1,6 @@
 Name:		keepnote
 Version:	0.7.7
-Release:	%mkrel 1
+Release:	2
 Group:		Development/Other
 License:	GPLv2
 Summary:	Lets you keep notes
@@ -22,16 +22,13 @@ Keepnote replaces knowit (which is incompatible with kde4).
 %build
 
 %install
-%__rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
 
 #find_lang causes problems here
 
 %clean
-%__rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{python_sitelib}/%{name}
 %{python_sitelib}/%{name}-%{version}-py%{py_ver}.egg-info
