@@ -1,6 +1,6 @@
 Name:		keepnote
 Version:	0.7.7
-Release:	2
+Release:	3
 Group:		Development/Other
 License:	GPLv2
 Summary:	Lets you keep notes
