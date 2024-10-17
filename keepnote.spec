@@ -5,7 +5,7 @@ Group:		Development/Other
 License:	GPLv2
 Summary:	Lets you keep notes
 Source:		http://rasm.ods.org/keepnote/download/keepnote-%{version}.tar.gz
-URL:		http://rasm.ods.org/keepnote/
+URL:		https://rasm.ods.org/keepnote/
 BuildArch:	noarch
 BuildRequires:	python-devel
 
